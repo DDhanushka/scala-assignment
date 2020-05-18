@@ -6,7 +6,6 @@ object Main extends App {
 
 	println(temperatureInF(35) + "F");
 
-
 	// 2. Volume of a sphere with radius 5
 	def volumeOfSphere(r:Double) :Double = (4/3) * Math.PI * Math.pow(r,3)
 
