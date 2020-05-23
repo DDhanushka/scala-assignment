@@ -26,4 +26,16 @@ object Main extends App {
 	println("Take home salaray = " + takeHomeSalaray(40, 20));
 
 	//// 2.	///////////////////////////////////////////////////
+	
+	def profit(ticketPrice:Int) :Int = income(ticketPrice) - costs(ticketPrice);
+
+	def income(ticketPrice:Int) :Int = attendees(ticketPrice) * ticketPrice;
+
+	def attendees(ticketPrice:Int) :Int = {
+		return 120 + 4 * (15-ticketPrice);
+	}
+
+	def costs(ticketPrice:Int) :Int = 500 + 3 * attendees(ticketPrice);
+
+	println("Profit when ticket price is " + 15 + " = " + profit(20));
 }
