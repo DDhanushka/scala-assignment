@@ -1,7 +1,7 @@
 // Assignment - 2
 
 object Main extends App {
-	//// 1.	///////////////////////////////////////////////////
+	//// 1.	////////////////////////////////////////////////////
 
 	def takeHomeSalaray(wh:Int, oh:Int) :Double= {
 		return income(wh, oh) - tax(income(wh, oh), 10);
@@ -25,7 +25,7 @@ object Main extends App {
 
 	println("Take home salaray = " + takeHomeSalaray(40, 20));
 
-	//// 2.	///////////////////////////////////////////////////
+	//// 2.	////////////////////////////////////////////////////
 	
 	def profit(ticketPrice:Int) :Int = income(ticketPrice) - costs(ticketPrice);
 
