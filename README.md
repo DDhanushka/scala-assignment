@@ -1,2 +1,3 @@
-# scala-assignment
-SCS 2204 Scala assignments submissions
+# SCS 2204 Scala assignments submissions
+
+### *Please see* scala-assignment/assignment-#/src/main/scala/Main.scala
