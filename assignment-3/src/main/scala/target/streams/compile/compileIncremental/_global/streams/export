@@ -1,0 +1,1 @@
+scalac -bootclasspath /home/ddhash/.sbt/boot/scala-2.12.10/lib/scala-library.jar -classpath /home/ddhash/Documents/DebianCodeFolder/scala/hello-world/src/main/scala/target/scala-2.12/classes /home/ddhash/Documents/DebianCodeFolder/scala/hello-world/src/main/scala/Main.scala
