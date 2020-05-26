@@ -5,21 +5,20 @@ object Main extends App {
 
 	def prime(n:Int, i:Int=2) :Boolean = {
 		if(i<=n) {
-			if(n%i==0) {
-				if(n==2)
-					return true;
-				else 
-					return false;
-			} else {
-				return true;
+			if(n%i==0 && i!=n) {
+				return false;
 			}
-			return prime(n, i+1);
-		} else 
-		return false;
+			prime(n, i+1);
+		} else {
+			return true;
+		}
 	}
 	println("5 "+prime(5));
 	println("8 " +prime(8));
 
 	//// 2.	///////////////////////////////////////////////////
+	def primeSeq(x:Int) = {
+		
+	}
 
 }
