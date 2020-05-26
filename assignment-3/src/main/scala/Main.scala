@@ -17,8 +17,13 @@ object Main extends App {
 	println("8 " +prime(8));
 
 	//// 2.	///////////////////////////////////////////////////
-	def primeSeq(x:Int) = {
-		
+	
+	def primeSeq(n:Int) :Unit = {
+		if(n<2)
+			return;
+		if(prime(n)) 
+			println(n);
+		primeSeq(n-1);
 	}
 
 }
