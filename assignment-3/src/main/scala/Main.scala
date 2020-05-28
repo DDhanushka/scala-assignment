@@ -55,4 +55,18 @@ object Main extends App {
 
 	println("21 -> " + isEven(21));
 	println("22 -> " + isEven(22));
+
+	println("-------------------------------------------------------");
+	//// 5.	///////////////////////////////////////////////////
+	def allEvenSum(n:Int, i:Int=0) :Int = {
+		if(n<2)
+			return 0;
+		if(isEven(n)) {
+			return n-2 + allEvenSum(n-2, i+1);
+		} else {
+			return n-1 + allEvenSum(n-2,i+1);
+		}
+	}
+
+	println(allEvenSum(12));
 }
