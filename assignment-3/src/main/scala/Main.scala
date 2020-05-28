@@ -64,6 +64,25 @@ object Main extends App {
 			return n-1 + allEvenSum(n-2,i+1);
 		}
 	}
-
 	println(allEvenSum(12));
+
+	println("-------------------------------------------------------");
+	//// 6.	///////////////////////////////////////////////////
+	def fibonacci(n:Int) :Int = {
+		if(n<1) return 0;
+		if(n==1)
+			return 1;
+		else {
+			fibonacci(n-1) + fibonacci(n-2);
+		}
+	}
+	def fibSeq(n:Int) :Unit = {
+		if(n>=0) {
+			fibSeq(n-1);
+			println(fibonacci(n));
+		}
+	}
+
+	fibSeq(10);
+	
 }
