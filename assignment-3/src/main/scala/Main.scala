@@ -29,7 +29,6 @@ object Main extends App {
 	}
 	primeSeq(10);
 
-
 	println("-------------------------------------------------------");
 	//// 3.	///////////////////////////////////////////////////
 
@@ -40,4 +39,20 @@ object Main extends App {
 			return 0;
 		}
 	}
+
+	println("Sum(5) => " + sum(5));
+
+	println("-------------------------------------------------------");
+	//// 4.	///////////////////////////////////////////////////
+	def isEven(n:Int) :Boolean = {
+		if(n==0) 
+			return true;
+		else if(n==1)
+			return false;
+		else 
+			return isEven(n - 2);
+	}
+
+	println("21 -> " + isEven(21));
+	println("22 -> " + isEven(22));
 }
