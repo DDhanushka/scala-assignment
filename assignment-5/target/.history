@@ -1,0 +1,9 @@
+run
+exit
+run
+re-run -deprecation
+run -deprication
+run
+:warnings
+exit
+run
