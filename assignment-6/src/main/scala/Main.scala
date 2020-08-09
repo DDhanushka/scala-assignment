@@ -13,7 +13,8 @@ object Main extends App {
 	// Move a point
 	p1.move(10, 10)
 	println(p1)
-
+	
+	// Get distance between two points
 	var p4 = new Point(7, 10)
 	println(p4.distance(p2))
 
